@@ -20,9 +20,6 @@ It is designed for simple UI automation flows such as:
 - Accessibility permission for Terminal
 - Screen Recording permission for Terminal
 
-For `ai-click`:
-- an OpenAI API key in `.env`
-
 ## Setup
 
 Create a local env file from the template:
@@ -107,14 +104,7 @@ go run . key enter
 Use AI to choose the best `iPhone` navigation target:
 
 ```bash
-go run . chrome-open https://www.apple.com
-go run . ai-click "click iphone tab"
-```
-
-Use AI to select a more specific target on the current page:
-
-```bash
-go run . ai-click "click iphone 16e product"
+go run . chrome-open https://www.apple.com && go run . ai-click "click iphone tab"
 ```
 
 ## Notes
