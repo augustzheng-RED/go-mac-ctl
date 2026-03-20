@@ -104,8 +104,9 @@ go run . key enter
 Use AI to choose the best `iPhone` navigation target:
 
 ```bash
-go run . chrome-open https://www.apple.com && go run . ai-click "click iphone tab"
+go run . chrome-open https://www.apple.com/ca/ && go run . ai-click "click iphone tab"
 ```
+![Demo](example.gif)
 
 ## Notes
 
